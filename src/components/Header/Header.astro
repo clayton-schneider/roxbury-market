@@ -1,18 +1,18 @@
 ---
-import { Icon } from "astro-icon";
+import { Image } from "@astrojs/image/components";
 // Import components
 import NavMenu from "./NavMenu";
+import TopBar from "./TopBar.astro";
 const links = [
   { linkText: "Home", link: "/" },
-  { linkText: "About", link: "/about" },
+  { linkText: "Out Story", link: "/about" },
   {
-    linkText: "Services",
-    link: "/services",
-    sublinks: [
-      { linkText: "Service One", link: "/services/service-one" },
-      { linkText: "Service Two", link: "/services/service-two" },
-      { linkText: "Service Three", link: "/services/service-three" },
-    ],
+    linkText: "Menu",
+    link: "/menu",
+  },
+  {
+    linkText: "Ice Cream",
+    link: "/ice-cream",
   },
   { linkText: "Contact", link: "/contact" },
 ];
@@ -23,9 +23,16 @@ interface Props {
 const { className } = Astro.props;
 ---
 
+<TopBar />
 <header class={(className ? className : "") + " px-edge relative"}>
   <div class="mx-auto flex max-w-screen-2xl items-center justify-between py-4">
-    <a href="/"><Icon name="logo" width="158" height="60" /></a>
+    <a href="/"
+      ><Image
+        height={100}
+        src={import("@img/logo.png")}
+        alt="the roxbury market"
+      />
+    </a>
 
     <NavMenu links={links} client:load />
   </div>

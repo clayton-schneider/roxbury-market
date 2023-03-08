@@ -3,18 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@data/*": [
-        "src/data/*"
-      ],
-      "@img/*": [
-        "src/img/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@sections/*": [
-        "src/sections/*"
-      ]
+      "@data/*": ["src/data/*"],
+      "@img/*": ["src/imgs/*"],
+      "@components/*": ["src/components/*"],
+      "@sections/*": ["src/sections/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

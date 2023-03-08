@@ -1,17 +1,23 @@
 ---
+import { Image } from "@astrojs/image/components";
 import { socials } from "@data/general";
 import { hours } from "@data/general";
 import { contacts } from "@data/general";
 import { Icon } from "astro-icon";
 ---
 
-<section class="py-10 px-edge">
-  <footer>
+<section class="px-edge bg-primary">
+  <footer class="py-10">
     <div
-      class="mx-auto flex flex-col text-center lg:text-left gap-10 items-center lg:flex-row lg:items-start max-w-screen-2xl justify-between"
+      class="mx-auto flex flex-col text-white text-center lg:text-left gap-10 items-center lg:flex-row lg:items-start max-w-screen-2xl justify-between"
     >
       <div class="max-w-sm mx-auto lg:mx-0">
-        <Icon name="logo" width="158" height="60" class="mx-auto lg:mx-0" />
+        <Image
+          src={import("@img/logo-white.png")}
+          height={60}
+          alt="the roxbury market"
+          class="mx-auto lg:mx-0"
+        />
         <p class="mt-2 text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum non ab
           exercitationem veritatis, labore nobis ipsa officiis magnam sequi,
@@ -20,8 +26,8 @@ import { Icon } from "astro-icon";
         <div class="mt-6 flex justify-center lg:justify-start space-x-2">
           {
             socials.map((social) => (
-              <a href={social.link}>
-                <Icon name={social.icon} size={30} color="black" />
+              <a href={social.link} target="_blank">
+                <Icon name={social.icon} size={30} color="white" />
               </a>
             ))
           }
@@ -58,8 +64,8 @@ import { Icon } from "astro-icon";
       </div>
     </div>
   </footer>
-  <div class="bg-primary-darker py-4">
-    <p class="text-center text-xl">
+  <div class="py-4">
+    <p class="text-center text-white text-sm">
       Copyright © 2022 Website Name | All Right Reserved | Powered By <a
         href="https://www.simply-sprout.com">Simply Sprout</a
       >
