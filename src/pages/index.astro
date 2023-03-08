@@ -1,16 +1,196 @@
 ---
+import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout
   SEO={{
-    metaTitle: "Simply Sprout Starter",
-    metaDescription: "The starter template for all Simply Sprout websites.",
+    metaTitle: "The Roxbury Market",
+    metaDescription: "The pulse of Roxbury.",
   }}
 >
+  <section
+    class="relative px-edge py-10 min-h-[600px] overflow-hidden lg:py-20 flex justify-center items-center"
+  >
+    <Image
+      src={import("@img/home/the-pulse-of-roxbury.jpg")}
+      alt="the pulse of roxbury"
+      class="absolute top-0 left-0 w-full object-cover"
+    />
+    <div class="max-w-screen-xl mx-auto text-white text-center relative z-10">
+      <h1 class="text-4xl lg:text-5xl font-bold">The Pulse of Roxbury</h1>
+      <p class="mt-4 max-w-2xl mx-auto">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+        blanditiis repellat cum expedita ducimus! Laboriosam molestias neque
+        architecto possimus blanditiis!
+      </p>
+      <div class="flex justify-center gap-5 mt-5">
+        <a
+          href="/about"
+          class="bg-accent text-white font-bold rounded-3xl py-4 px-12 inline-block leading-none"
+          >Our Story</a
+        >
+        <a
+          class="border border-white leading-none font-bold text-white inline-block rounded-3xl px-12 py-4"
+          href="/contact">Contact Us</a
+        >
+      </div>
+    </div>
+  </section>
+
   <section class="px-edge py-10 lg:py-20">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+      <Image
+        src={import("@img/home/kitchen.png")}
+        alt="ferris acres ice cream"
+      />
+      <div>
+        <div class="flex items-center gap-2">
+          <div class="flex gap-[1px]">
+            {
+              [...Array(3).keys()].map(() => (
+                <div class="w-2 h-2 border-black border-2 rounded-full" />
+              ))
+            }
+          </div>
+          <p class="font-bold leading-none uppercase">Our Kitchen</p>
+        </div>
+
+        <h2 class="font-bold text-3xl lg:text-4xl">
+          Fresh Cooked Meals Ready To Order
+        </h2>
+        <div class="mt-2 flex items-center gap-1">
+          <Icon name="mdi:clock-outline" size={20} />
+
+          <p class="leading-none text-lg">Mon-Sun Until 2:00 pm</p>
+        </div>
+        <p class="mt-3 max-w-lg text-lg leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+          aspernatur impedit ea dolore ducimus eius architecto esse sint dolor
+          quia!
+        </p>
+        <a
+          href="/ice-cream"
+          class="mt-5 bg-accent text-white font-bold rounded-3xl py-4 px-12 inline-block leading-none"
+          >View Our Menu</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="px-edge py-10 lg:py-20 bg-[#e3eeff]">
     <div class="max-w-screen-xl mx-auto">
-      <h1>Hi</h1>
+      <div class="bg-white p-10 rounded flex justify-between gap-10">
+        <div>
+          <div class="flex items-center gap-2">
+            <div class="flex gap-[1px]">
+              {
+                [...Array(3).keys()].map(() => (
+                  <div class="w-2 h-2 border-black border-2 rounded-full" />
+                ))
+              }
+            </div>
+            <p class="font-bold leading-none uppercase">Ice Cream</p>
+          </div>
+
+          <h2 class="font-bold text-3xl lg:text-4xl">
+            Ferris Acres Ice Cream!
+          </h2>
+          <div class="mt-2 flex items-center gap-1">
+            <Icon name="mdi:clock-outline" size={20} />
+
+            <p class="leading-none text-lg">Mon-Sun All Day</p>
+          </div>
+          <p class="mt-3 max-w-lg text-lg leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+            aspernatur impedit ea dolore ducimus eius architecto esse sint dolor
+            quia!
+          </p>
+          <a
+            href="/ice-cream"
+            class="mt-5 bg-accent text-white font-bold rounded-3xl py-4 px-12 inline-block leading-none"
+            >See All Flavors</a
+          >
+        </div>
+        <Image
+          src={import("@img/home/ferris-acres-ice-cream.png")}
+          alt="ferris acres ice cream"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="px-edge py-10 lg:py-20">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+      <Image
+        src={import("@img/home/kitchen.png")}
+        alt="ferris acres ice cream"
+      />
+      <div>
+        <div class="flex items-center gap-2">
+          <div class="flex gap-[1px]">
+            {
+              [...Array(3).keys()].map(() => (
+                <div class="w-2 h-2 border-black border-2 rounded-full" />
+              ))
+            }
+          </div>
+          <p class="font-bold leading-none uppercase">
+            Local Goods and Merchandise
+          </p>
+        </div>
+
+        <h2 class="font-bold text-3xl lg:text-4xl">
+          Lorem ipsum dolor sit amet.
+        </h2>
+        <p class="mt-3 max-w-lg text-lg leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+          aspernatur impedit ea dolore ducimus eius architecto esse sint dolor
+          quia!
+        </p>
+        <a
+          href="/ice-cream"
+          class="mt-5 bg-accent text-white font-bold rounded-3xl py-4 px-12 inline-block leading-none"
+          >Visit Our Online Store</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="px-edge py-10 lg:py-20">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+      <div>
+        <div class="flex items-center gap-2">
+          <div class="flex gap-[1px]">
+            {
+              [...Array(3).keys()].map(() => (
+                <div class="w-2 h-2 border-black border-2 rounded-full" />
+              ))
+            }
+          </div>
+          <p class="font-bold leading-none uppercase">Veteran Owned</p>
+        </div>
+
+        <h2 class="font-bold text-3xl lg:text-4xl">
+          Lorem ipsum dolor sit amet.
+        </h2>
+        <p class="mt-3 max-w-lg text-lg leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+          aspernatur impedit ea dolore ducimus eius architecto esse sint dolor
+          quia!
+        </p>
+        <a
+          href="/ice-cream"
+          class="mt-5 bg-accent text-white font-bold rounded-3xl py-4 px-12 inline-block leading-none"
+          >Learn More About Our Story</a
+        >
+      </div>
+      <Image
+        class="rounded-lg"
+        height={500}
+        src={import("@img/home/wayne.jpg")}
+        alt="wayne ferris of the roxbury market"
+      />
     </div>
   </section>
 </Layout>
