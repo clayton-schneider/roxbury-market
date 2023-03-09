@@ -1,6 +1,9 @@
 ---
 import ContactForm from "@components/Forms/ContactForm";
 import Layout from "src/layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+import { contacts } from "@data/general";
 
 const fields = [
   { fieldType: "text", id: "first", name: "First Name" },
@@ -17,9 +20,33 @@ const fields = [
     metaDescription: "The starter template for all Simply Sprout websites.",
   }}
 >
+  <section
+    class="relative overflow-hidden min-h-[600px] flex justify-center items-center"
+  >
+    <Image
+      class="absolute left-0 top-0 w-full object-cover"
+      src={import("@img/contact.jpg")}
+      alt="friendly roxbury market"
+    />
+    <div class="max-w-screen-xl mx-auto relative z-10 text-white text-center">
+      <h1 class="font-bold text-4xl lg:text-5xl">Contact Us</h1>
+      <ul class="mt-5 space-y-2">
+        {
+          contacts.map((contact) => (
+            <li class="flex space-x-2 text-lg justify-center lg:justify-start">
+              <Icon name={contact.icon} size={30} />
+              <p>{contact.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
   <section class="px-edge py-10 lg:py-20">
     <div class="max-w-screen-xl mx-auto">
-      <h1>Hi</h1>
+      <h2 class="font-bold text-3xl lg:text-4xl text-center text-text-dark">
+        Send Us a Message
+      </h2>
       <ContactForm
         client:load
         name="Simply Sprout Contact Form"
@@ -27,6 +54,17 @@ const fields = [
         error="There was an error submitting this form. Please refresh and try again. If the problem persists, please send us an email directly."
         fields={fields}
       />
+    </div>
+  </section>
+  <section class="px-edge py-10 lg:py-20">
+    <div class="max-w-screen-xl mx-auto">
+      <div class="gmap_canvas">
+        <iframe
+          class="w-full"
+          height="500"
+          src="https://maps.google.com/maps?q=26%20North%20St,%20Roxbury,%20CT%2006783&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        ></iframe>
+      </div>
     </div>
   </section>
 </Layout>

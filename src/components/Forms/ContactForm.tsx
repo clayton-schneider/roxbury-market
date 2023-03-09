@@ -121,7 +121,7 @@ const ContactForm = ({
               onChange={handleChange}
               name={field.name}
               id={field.id}
-              className="h-[150px] w-full resize-none rounded border bg-white px-4 pt-2 placeholder:text-black focus:outline-none"
+              className="h-[150px] w-full resize-none rounded border border-black px-4 pt-2 placeholder:text-black focus:outline-none"
               placeholder={field.name}
             />
           ) : (
@@ -130,7 +130,7 @@ const ContactForm = ({
               type={field.fieldType}
               name={field.name}
               id={field.id}
-              className="w-full rounded bg-white py-2 pl-4 placeholder:text-black focus:outline-none"
+              className="w-full rounded bg-white py-2 pl-4 border border-black placeholder:text-black focus:outline-none"
               placeholder={field.name}
             />
           )}
@@ -138,7 +138,7 @@ const ContactForm = ({
       ))}
 
       {(formState === "ready" || formState === "empty") && (
-        <button className="col-span-full rounded border-2 border-transparent bg-primary py-6 px-7 text-center leading-none text-white transition-all duration-300 hover:border-primary hover:bg-transparent hover:text-primary">
+        <button className="col-span-full rounded-3xl border-2 border-transparent bg-primary py-4 px-11 text-center leading-none text-white transition-all duration-300 hover:border-primary hover:bg-transparent hover:text-primary">
           {button}
         </button>
       )}

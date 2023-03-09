@@ -1,0 +1,31 @@
+---
+import { Image } from "@astrojs/image/components";
+import Layout from "src/layouts/Layout.astro";
+---
+
+<Layout
+  SEO={{
+    metaTitle: "Our Menu | The Roxbury Market",
+    metaDescription: "CHANGE THIS",
+  }}
+>
+  <section class="px-edge py-10 lg:py-20">
+    <div class="max-w-screen-xl mx-auto">
+      <h1 class="font-bold text-4xl lg:text-5xl text-text-dark text-center">
+        Our Menu
+      </h1>
+      <a href="/menu.pdf" target="_blank">
+        <Image
+          width={1280}
+          src={import("@img/menu/menu-1.png")}
+          alt="roxbury market deli menu"
+        />
+        <Image
+          width={1280}
+          src={import("@img/menu/menu-2.png")}
+          alt="roxbury market deli menu"
+        />
+      </a>
+    </div>
+  </section>
+</Layout>
