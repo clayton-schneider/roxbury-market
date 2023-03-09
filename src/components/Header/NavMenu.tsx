@@ -53,14 +53,6 @@ const NavMenu = ({ links }: Props) => {
             );
           }
         })}
-        <li>
-          <a
-            href=""
-            className="!block w-full text-center lg:text-left lg:w-auto"
-          >
-            Call To Action
-          </a>
-        </li>
       </ul>
       <Hamburger clicked={handleClick} isOpen={isOpen} />
     </div>
