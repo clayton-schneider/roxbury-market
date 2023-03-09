@@ -1,0 +1,41 @@
+---
+import { Image } from "@astrojs/image/components";
+import Layout from "src/layouts/Layout.astro";
+import { flavors } from "@data/ice-cream";
+---
+
+<Layout
+  SEO={{
+    metaTitle: "Ice Cream | The Roxbury Market",
+    metaDescription: "CHANGE THIS",
+  }}
+>
+  <section
+    class="relative overflow-hidden px-edge py-10 lg:py-20 min-h-[600px] flex justify-center items-center"
+  >
+    <Image
+      class="absolute left-0 top-0 w-full"
+      src={import("@img/ice-cream/creamery.jpg")}
+      alt="ferris acres ice cream"
+    />
+    <div class="max-w-screen-xl mx-auto relative z-10">
+      <h1 class="font-bold text-4xl lg:text-5xl text-white">
+        Our Ice Cream Menu
+      </h1>
+    </div>
+  </section>
+  <section class="py-10">
+    <div>
+      <ul class="space-y-5 text-center text-text-dark">
+        {
+          flavors.map((flavor) => (
+            <li>
+              <p class="font-bold text-3xl">{flavor.title}</p>
+              <p class="text-lg">{flavor.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</Layout>
