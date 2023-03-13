@@ -20,10 +20,16 @@ import { Image } from "@astrojs/image/components";
     <div class="max-w-screen-xl mx-auto relative z-10 text-white text-center">
       <h1 class="font-bold text-4xl lg:text-5xl">Our Story</h1>
       <p class="mt-3 max-w-2xl mx-auto leading-relaxed text-lg">
-        Nearly 100 years ago The Roxbury Market was known as Hodges. For
-        generations The Roxbury Market has been an integral part of the Roxbury
-        community. Nestled in the center of town, dedicated to uplifting the
-        local community. <span class="font-bold">The Pulse of Roxbury.</span>
+        The Roxbury Market serves the people and communities of Roxbury,
+        Bridgewater, and Washington Connecticut. As the Roxbury Market started
+        as the Hodge's Market in 1934 and eventually changed its name to the
+        Roxbury Market, we have served the small New England communities tucked
+        away in the Lichfield Hills for many generations. We have also provided
+        service to many well known residents such as Marilyn Monroe, Arthur
+        Miller, Richard Widmark, Denis Leary, Dustin Hoffman, Daniel Day-Lewis,
+        Charlie Cox and many more. And as we continue to serve, we pledge to
+        retain our small-town appeal and yet provide the best services and
+        products to keep both our uniqueness and vitality.
       </p>
     </div>
   </section>
@@ -40,13 +46,92 @@ import { Image } from "@astrojs/image/components";
       <div class="max-w-2xl text-center lg:text-left">
         <h2 class="font-bold text-text-dark text-3xl lg:text-4xl">My Story</h2>
         <p class="mt-3 text-lg leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-          quisquam commodi doloremque alias blanditiis facilis praesentium
-          perferendis voluptatem, illum totam?
+          After serving many years in the United States Air Force and inspired
+          by vast experiences throughout the world, I wanted to venture out on
+          my own. The Roxbury Market has provided a bridge with a connection
+          between serving and building a new civilian life. The Market is small
+          in size but not in scope as we have propagated the shelves with many
+          artisan Food items and regional Beer. We also have a full-service
+          Deli, as well as, a Gasoline/Diesel station. In addition, we serve
+          renown Ferris Acres Ice Cream. We have a large selection of local and
+          national outstanding coffees such as Ferris, Black Rifle, Sacred
+          Grounds, Redding Roasters, Zero Prophet, Candlewood, Bones, and many
+          more. The Market also has an extensive range of merchandise.
         </p>
       </div>
     </div>
   </section>
 
-  <section></section>
+  <section class="px-edge py-10 lg:py-20">
+    <div
+      class="max-w-screen-xl mx-auto flex flex-col items-center lg:items-start lg:flex-row-reverse justify-between gap-10"
+    >
+      <Image
+        class="object-cover"
+        width={600}
+        src={import("@img/about/our-mission.jpg")}
+        alt="wayne ferris stocking shelves"
+      />
+      <div class="text-center lg:text-left">
+        <h2 class="font-bold text-3xl lg:text-4xl">Our Mission</h2>
+        <p class="mt-3 text-lg leading-relaxed">
+          The Roxbury Market serves the people and communities of Roxbury,
+          Bridgewater, and Washington Connecticut. Our mission provides the
+          community with a warm and inviting Market that offers high-quality
+          products at fair prices. We strive to be the hub for local growers,
+          producers, and artisans, while also offering a diverse selection of
+          goods from around the world. Our commitment to our customers ensures
+          we provide a true slice of Americana with respect to our past and also
+          ensuring a secure position for the future.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="px-edge py-10 lg:py-20">
+    <div
+      class="max-w-screen-xl mx-auto flex flex-col items-center lg:items-start lg:flex-row justify-between gap-10"
+    >
+      <Image
+        class="object-cover"
+        width={600}
+        src={import("@img/about/our-vision.jpg")}
+        alt="wayne ferris stocking shelves"
+      />
+      <div class="text-center lg:text-left">
+        <h2 class="font-bold text-3xl lg:text-4xl">Our Vision</h2>
+        <p class="mt-3 text-lg leading-relaxed">
+          Create a vibrant and sustainable marketplace that serves as a
+          gathering place for the local communities. We seek to foster a sense
+          of connection and pride in the region by promoting the rich cultural
+          heritage and unique character of New England through our products and
+          services. As a small town Market, we are an integral part of the
+          community fabric and contribute to the economic growth and vitality of
+          the area.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="px-edge py-10 lg:py-20">
+    <div
+      class="max-w-screen-xl mx-auto flex flex-col items-center lg:items-start lg:flex-row-reverse justify-between gap-10"
+    >
+      <Image
+        class="object-cover"
+        width={600}
+        src={import("@img/about/our-staff.jpg")}
+        alt="roxbury market staff"
+      />
+      <div class="text-center lg:text-left">
+        <h2 class="font-bold text-3xl lg:text-4xl">Our Staff</h2>
+        <p class="mt-3 text-lg leading-relaxed">
+          A large part of the Roxbury Market's success through the last decade
+          is due to the outstanding work ethic and discipline or our employees
+          of which most attend High School and Universities. The Market is
+          committed on flexibility of students to ensure their long-term goals
+          are fulfilled while demonstrating a strong work ethic and
+          entrepreneurship in action.
+        </p>
+      </div>
+    </div>
+  </section>
 </Layout>
