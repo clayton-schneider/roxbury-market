@@ -7,12 +7,12 @@ export const socials = [
 ];
 
 export const hours = [
-  { day: "Monday", open: "6:00", close: "8:00" },
-  { day: "Tuesday", open: "6:00", close: "8:00" },
-  { day: "Wednesday", open: "6:00", close: "8:00" },
-  { day: "Thursday", open: "6:00", close: "8:00" },
-  { day: "Friday", open: "6:00", close: "8:00" },
-  { day: "Saturday", open: "6:00", close: "8:00" },
+  { day: "Monday", open: "6:00", close: "5:00" },
+  { day: "Tuesday", open: "6:00", close: "5:00" },
+  { day: "Wednesday", open: "6:00", close: "5:00" },
+  { day: "Thursday", open: "6:00", close: "5:00" },
+  { day: "Friday", open: "6:00", close: "5:00" },
+  { day: "Saturday", open: "6:00", close: "5:00" },
   { day: "Sunday", open: "7:00", close: "5:00" },
 ];
 
