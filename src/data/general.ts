@@ -4,6 +4,11 @@ export const socials = [
     icon: "mdi:facebook",
     link: "https://www.facebook.com/RoxburyMarket",
   },
+  {
+    name: "instagram",
+    icon: "mdi:instagram",
+    link: "https://www.instagram.com/theroxburymarket/",
+  },
 ];
 
 export const hours = [
@@ -22,6 +27,6 @@ export const contacts = [
     text: "26 North St, Roxbury, CT 06783",
     icon: "mdi:pin",
   },
-  { name: "Email", text: "contact@website.com", icon: "mdi:email" },
+  { name: "Email", text: "waynebferris@aol.com", icon: "mdi:email" },
   { name: "Phone", text: "(860) 355-0733", icon: "mdi:phone" },
 ];
