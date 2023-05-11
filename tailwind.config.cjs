@@ -18,6 +18,10 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Poppins", ...FONT_FAMILY_BASE],
+        roboto: ["Roboto", ...FONT_FAMILY_BASE],
+      },
       colors: {
         primary: "#64433F",
         accent: "#41AC52",
