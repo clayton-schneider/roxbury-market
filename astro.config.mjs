@@ -10,15 +10,17 @@ import react from "@astrojs/react";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
 export default defineConfig({
-  site: "https://sitegoeshere.com",
-  integrations: [
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    react(),
-    image(),
-  ],
+  site: "https://www.theroxburymarket.net",
+  build: {
+    format: "file"
+  },
+  integrations: [tailwind({
+    config: {
+      applyBaseStyles: false
+    }
+  }), react(), image(), sitemap()]
 });
