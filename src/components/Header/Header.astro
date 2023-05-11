@@ -2,7 +2,8 @@
 import { Image } from "@astrojs/image/components";
 // Import components
 import NavMenu from "./NavMenu";
-import TopBar from "./TopBar.astro";
+// Topbar removed for now
+// import TopBar from "./TopBar.astro";
 const links = [
   { linkText: "Home", link: "/" },
   { linkText: "Our Story", link: "/about" },
@@ -23,7 +24,6 @@ interface Props {
 const { className } = Astro.props;
 ---
 
-<TopBar />
 <header class={(className ? className : "") + " px-edge relative"}>
   <div class="mx-auto flex max-w-screen-2xl items-center justify-between py-4">
     <a href="/"
