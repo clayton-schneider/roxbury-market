@@ -14,6 +14,8 @@ import { Image } from "@astrojs/image/components";
   >
     <Image
       class="absolute inset-0 h-full w-full object-cover"
+      format="webp"
+      quality={100}
       src={import("@img/about.jpg")}
       alt="historical photo of roxbury market"
     />
@@ -39,6 +41,8 @@ import { Image } from "@astrojs/image/components";
     >
       <Image
         class="shrink-0 grow rounded-full w-[350px] h-[350px] max-w-[500px] lg:w-[500px] lg:h-[500px] object-cover"
+        format="webp"
+        quality={100}
         width={500}
         src={import("@img/home/wayne.jpg")}
         alt="wayne ferris"
@@ -68,6 +72,8 @@ import { Image } from "@astrojs/image/components";
     >
       <Image
         class="object-cover"
+        format="webp"
+        quality={100}
         width={600}
         src={import("@img/about/our-mission.jpg")}
         alt="wayne ferris stocking shelves"
@@ -92,6 +98,8 @@ import { Image } from "@astrojs/image/components";
       class="max-w-screen-xl mx-auto flex flex-col items-center lg:items-start lg:flex-row justify-between gap-10"
     >
       <Image
+        format="webp"
+        quality={100}
         class="object-cover"
         width={600}
         src={import("@img/about/our-vision.jpg")}
@@ -116,6 +124,8 @@ import { Image } from "@astrojs/image/components";
       class="max-w-screen-xl mx-auto flex flex-col items-center lg:items-start lg:flex-row-reverse justify-between gap-10"
     >
       <Image
+        format="webp"
+        quality={100}
         class="object-cover"
         width={600}
         src={import("@img/about/our-staff.jpg")}

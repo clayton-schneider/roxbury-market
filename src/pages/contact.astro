@@ -24,6 +24,8 @@ const fields = [
     class="relative overflow-hidden min-h-[600px] flex justify-center items-center"
   >
     <Image
+      format="webp"
+      quality={100}
       class="absolute left-0 top-0 w-full object-cover"
       src={import("@img/contact.jpg")}
       alt="friendly roxbury market"
@@ -49,7 +51,7 @@ const fields = [
       </h2>
       <ContactForm
         client:load
-        name="Simply Sprout Contact Form"
+        name="The Roxbury Market Contact Form"
         message="Thank you for submitting this contact form. We will reach out to you shortly."
         error="There was an error submitting this form. Please refresh and try again. If the problem persists, please send us an email directly."
         fields={fields}
