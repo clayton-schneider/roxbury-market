@@ -18,7 +18,7 @@ export const hours = [
   { day: "Thursday", open: "6:00", close: "5:00" },
   { day: "Friday", open: "6:00", close: "5:00" },
   { day: "Saturday", open: "6:00", close: "5:00" },
-  { day: "Sunday", open: "7:00", close: "5:00" },
+  { day: "Sunday", open: "7:00", close: "4:00" },
 ];
 
 export const contacts = [
