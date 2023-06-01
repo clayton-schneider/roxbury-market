@@ -27,7 +27,11 @@ const date = new Date();
         <div class="mt-6 flex justify-center lg:justify-start space-x-2">
           {
             socials.map((social) => (
-              <a href={social.link} target="_blank">
+              <a
+                href={social.link}
+                target="_blank"
+                aria-label={`social link to: ${social.name}`}
+              >
                 <Icon name={social.icon} size={30} color="white" />
               </a>
             ))
