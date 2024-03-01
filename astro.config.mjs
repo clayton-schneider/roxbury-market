@@ -13,6 +13,9 @@ import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
+import partytown from "@astrojs/partytown";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://www.theroxburymarket.net",
   build: {
@@ -22,5 +25,5 @@ export default defineConfig({
     config: {
       applyBaseStyles: false
     }
-  }), react(), image(), sitemap()]
+  }), react(), image(), sitemap(), partytown()]
 });
